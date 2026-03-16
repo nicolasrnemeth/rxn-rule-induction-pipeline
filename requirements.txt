@@ -1,0 +1,23 @@
+networkx==3.4.2
+numpy
+rdkit==2025.3.5
+matplotlib
+tqdm
+scipy
+umap
+torch
+nltk==3.9.2
+# you need to install mod yourself, not possible via pip
+#mod
+
+# required for pretrained gnn 2020 hu
+## numpy
+# torch>=1.0.1
+# torch-cluster>=1.2.4              
+# torch-geometric>=1.0.3
+# torch-scatter>=1.1.2 
+# torch-sparse>=0.2.4
+# torch-spline-conv>=1.0.6
+## rdkit-pypi older rdkit version
+## tqdm
+# tensorboardx>=1.6

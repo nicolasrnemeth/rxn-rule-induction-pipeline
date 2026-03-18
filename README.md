@@ -1,33 +1,18 @@
-# MasterThesis
-Code development for master thesis in area of graph grammar learning for molecular generation optimized via end-to-end machine learning task.
+# rxn-rule-induction-pipeline
 
----
+## Automated Chemical Reaction Rule Induction via Junction-Tree Guided Graph Transformations and Reinforcement Learning
 
-## Branch Naming
-> Branch names should be descriptive of the work being done. Follow this format:
+[span_0](start_span)This repository contains the pipeline and source code developed for the Master's thesis: **Automated Chemical Reaction Rule Induction via Junction-Tree Guided Graph Transformations and Reinforcement Learning**[span_0](end_span). [span_1](start_span)The goal of this project is to automate the extraction of chemically sensible reaction rules from molecule datasets using graph grammar modelling and reinforcement learning[span_1](end_span). 
 
-feature/[issue-number]-[short-description]
-bugfix/[issue-number]-[short-description]
+### Description
 
-### Examples
+[span_2](start_span)Molecular structures can be formally represented as labeled graphs[span_2](end_span). [span_3](start_span)In this formalism, chemical reactions correspond to local graph transformations that must adhere to strict physicochemical constraints, such as valence compliance and atom conservation[span_3](end_span). [span_4](start_span)While graph grammars represent a powerful generative language for chemical reaction spaces, automated extraction of valid reaction rules remains complex[span_4](end_span).
 
-**Feature Branch Feature X:**
-- 1-feature-x
+[span_5](start_span)This pipeline addresses this challenge by utilizing the graph grammar modelling language (GML) provided by the MØD software package[span_5](end_span). [span_6](start_span)By combining tree-structured, hierarchical molecule representations—specifically, an adapted Junction-Tree decomposition—with Reinforcement Learning (RL), this framework generates valid reaction rules[span_6](end_span). [span_7](start_span)These rules can reproduce initial molecular training datasets, generalize to generate novel valid molecules, and optimize against specific evaluation metrics[span_7](end_span). [span_8](start_span)The decomposition method breaks molecular graphs into chemically sensible substructures, such as rings or functional groups, and arranges them in cycle-free tree structures for improved chemical validity and interpretability[span_8](end_span).
 
-**Bugfix for Junction Tree Algorithm:**
-- 2-fix-algorithm
+### Key Features
 
-## Commit Message Guidelines
-> In general, follow the conventional commit specification. In short, to maintain a clear and informative history of changes, commit messages should follow this format: [type]: [short description] refs #[issue-nr]
-
-**Types**
-- feature: A new feature for the project.
-- bug: A bug fix.
-- docs: Documentation only changes.
-- design: draft or design only task
-
-**Feature Commit:**
-feature: add junction tree algorithm refs #[issue-nr]
-
-**Bug Fix Commit:**
-fix: fix algorithm not working with edge case ... refs #[issue-nr]
+* **[span_9](start_span)Junction-Tree Decomposition**: Breaks down molecular graphs into meaningful chemical substructures to avoid chemically invalid flat graph manipulations[span_9](end_span).
+* **[span_10](start_span)Reinforcement Learning Optimization**: Employs an AI model to iteratively select and substitute substructures with non-terminal symbols, optimizing the generated rules against specific chemical metrics[span_10](end_span).
+* **[span_11](start_span)MØD Integration**: Uses the graph grammar modelling language (GML) from the MØD software package for robust graph transformations[span_11](end_span).
+* **[span_12](start_span)Generative Extensibility**: Generated rules can produce novel, chemically valid molecules that extend beyond the initial training datasets[span_12](end_span).
